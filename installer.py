@@ -30,7 +30,7 @@ if Os==1:
 	print(" ")
 	print(" ")
 	print(" ")
-	print("STARTING FEBREV VENOM......#######################")
+	print("STARTING FEBREV PORT-FORWARDER......#######################")
 	os.system("chmod +x *")
 	os.system("sudo python3 frportfwd.py")
 elif Os==2:
@@ -47,6 +47,6 @@ elif Os==2:
 	print(" ")
 	print("STARTING FEBREV VENOM......#######################")
 	os.system("chmod +x *")
-	os.system("sudo python3 frportfwd.py")
+	os.system("python3 frportfwd.py")
 	
 	

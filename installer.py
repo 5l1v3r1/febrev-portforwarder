@@ -21,7 +21,7 @@ Os=int(input("CHOOSE THE OS : "))
 if Os==1:
 	path=os.getcwd()
 	with open("frp.sh","w+") as fr:
-		fr.write(f"python3 {path}/frportforward.py")
+		fr.write(f"python3 {path}/febrev-portforwarder/frportforward.py")
 	os.system(f"cp {path}/frp.sh /bin/frp")
 	os.system("chmod +x /bin/frp")
 	print("")

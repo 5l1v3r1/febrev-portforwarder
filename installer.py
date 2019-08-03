@@ -17,7 +17,7 @@ ssh=input("IS openssh INSTALLED IN YOUR SYSTEM? [Y/n] : ")
 if ssh=="n" or ssh=="N":
            os.system("apt-get install openssh")
 print("[1] kali linux   [2] Termux ")
-Os=int(input("CHOOSE THE OS : ")
+Os=int(input("CHOOSE THE OS : "))
 if Os==1:
 	path=os.getcwd()
 	with open("frp.sh","w+") as fr:

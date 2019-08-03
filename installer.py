@@ -21,11 +21,11 @@ Os=int(input("CHOOSE THE OS : "))
 if Os==1:
 	path=os.getcwd()
 	with open("frp.sh","w+") as fr:
-		fr.write(f"python3 {path}/febrev-portforwarder/frportforward.py")
+		fr.write(f"python3 {path}/frportfwd.py")
 	os.system(f"cp {path}/frp.sh /bin/frp")
 	os.system("chmod +x /bin/frp")
 	print("")
-	print("NOW YOU CAN RUN FEBREV-VENOM FROM ANYWERE BY TYPING COMMAND  >>  frp")
+	print("NOW YOU CAN RUN FEBREV PORT-FORWARDER FROM ANYWERE BY TYPING COMMAND  >>  frp")
 	exiting=input("ENTER ANY KEY TO CONTINUE.......!!!!! ")
 	print(" ")
 	print(" ")
@@ -36,16 +36,16 @@ if Os==1:
 elif Os==2:
 	path=os.getcwd()
 	with open("frp.sh","w+") as fr:
-		fr.write(f"python3 {path}/frportforward.py")
+		fr.write(f"python3 {path}/frportfwd.py")
 	os.system(f"cp {path}/frp.sh //data/data/com.termux/files/usr/bin/frp")
 	os.system("chmod +x //data/data/com.termux/files/usr/bin/frp")
 	print("")
-	print("NOW YOU CAN RUN FEBREV-VENOM FROM ANYWERE BY TYPING COMMAND  >>  frp")
+	print("NOW YOU CAN RUN FEBREV PORT FORWARDER FROM ANYWERE BY TYPING COMMAND  >>  frp")
 	exiting=input("ENTER ANY KEY TO CONTINUE.......!!!!! ")
 	print(" ")
 	print(" ")
 	print(" ")
-	print("STARTING FEBREV VENOM......#######################")
+	print("STARTING FEBREV PORT FORWARDER......#######################")
 	os.system("chmod +x *")
 	os.system("python3 frportfwd.py")
 	

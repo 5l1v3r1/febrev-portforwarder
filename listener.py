@@ -1,4 +1,5 @@
 import os
+import socket
 print("[1] msf meterpreter listener")
 print("[0] Exit ")
 print("""
@@ -6,8 +7,8 @@ print("""
 
 """)
 listener=int(input("Enter the choice : "))
-ip=input("ENTER LHOST IP : ")
-port=int(input("Enter LPORT : "))
+ip=socket.gethostbyname(socket.gethostname())
+port=int(input("Enter LPORT (which is forwarded): "))
 if listener==1:
 	os.system("service postgresql start")
 	op=input("ENTER THE PAYLOAD FOR (windows or android): ")

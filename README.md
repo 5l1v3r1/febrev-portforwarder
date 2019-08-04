@@ -11,3 +11,8 @@ usage:
     
     direct command >> frp
     
+OPEN ANOTHER TERMINAL:
+
+run    :   python3 listener.py
+
+    

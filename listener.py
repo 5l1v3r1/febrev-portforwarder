@@ -1,7 +1,6 @@
 import os
-import socket
 print("[1] msf meterpreter listener")
-print("[0] ")
+print("[0] Exit ")
 print("""
 
 

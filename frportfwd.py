@@ -18,6 +18,8 @@ print("""\033[1;30m
 [1] ANDROID PAYLOAD
 
 [2] WINDOWS PAYLOAD
+
+[3] OPEN PORT ALREADY CREATED PAYLOAD
 """)
 print("\033[1;36m ENTER THE CHOICE....")
 payload_choice=int(input("FRportfwd>>># "))
@@ -98,6 +100,10 @@ elif payload_choice==2:
 		print("PORT FORWARDING ENABLED>>>>>>>>>>")
 		print("C-A-U-T-I-O-N :CLOSING THIS WINDOW COULD STOP PORT FORWARDING")
 		os.system(f"ssh -R {port}:{ip}:{port} serveo.net")
+elif payload_choice==3:
+	port=input("ENTER THE PORT YOU USED IN THE PAYLOAD : ")
+	print(f"\033[5;32m PORT FORWARDING STARTED ON PORT {port}.....")
+	os.system(f"ssh -R {port}:loaclhost:{port} serveo.net > /dev/null") 
 else:
 	print("NO PROPER INPUT GIVEN ..... EXITING")
 
